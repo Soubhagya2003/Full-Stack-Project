@@ -1,18 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Indian Election</title>
-    <style>
-        /* Add your CSS here */
-    </style>
+  <title>Indian Election Voting Application</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-image: url('https://c.files.bbci.co.uk/D6B9/production/_107096945_india_elections_2019_index_976.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      filter: brightness(0.8); /* Adjust the brightness value as needed */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .center-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.8); /* Background color with reduced opacity */
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    h2 {
+      color: #007BFF; /* Blue text color */
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .form-group label {
+      font-size: 18px;
+    }
+
+    .form-control {
+      border: none;
+      border-bottom: 2px solid #007BFF; /* Blue underline for the input */
+      border-radius: 0;
+      font-size: 18px;
+      padding: 10px 0;
+    }
+
+    .btn {
+      background-color: #007BFF;
+      color: #fff;
+      border: none;
+      font-size: 18px;
+      padding: 15px 30px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #0056b3; /* Darker blue on hover */
+    }
+
+    /* Add more custom styles as needed */
+
+  </style>
 </head>
 <body>
-    <h1>Indian Election</h1>
-    <p>Please enter your Aadhaar Card Number to Authenticate yourself in order to cast your precious vote.</p>
-    <form action="/submit" method="post">
-        <label for="aadhaar">Enter your Aadhaar Card Number (UIDAI Number)</label><br>
-        <input type="text" id="aadhaar" name="aadhaar"><br>
-        <input type="submit" value="Authenticate">
-    </form>
+
+<div class="center-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h2>E-Voting Platform</h2>
+        <p>Please Enter your Aadhar Card Number to Authenticate yourself in order to cast your precious vote.</p>
+        <form>
+          <div class="form-group">
+            <label for="aadhar">Aadhar Card Number (UIDAI Number):</label>
+            <input type="text" class="form-control" id="aadhar" placeholder="XXXX XXXX XXXX" name="aadhar">
+          </div>
+          <button type="submit" class="btn">Authenticate</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
